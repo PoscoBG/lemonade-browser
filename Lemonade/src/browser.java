@@ -23,14 +23,14 @@ public class browser extends Application {
         final WebView browser = new WebView();
         final WebEngine webEngine = browser.getEngine();
         webEngine.setJavaScriptEnabled(true);
-        TextField hpl = new TextField ();
-        TextField textField = hpl;
+        TextField l = new TextField ();
+        TextField textField = l;
 		hpl.setOnAction(new EventHandler<ActionEvent>() {
           @Override public void handle(ActionEvent e) {
               webEngine.load("http://" + textField.getText());
           }
       });
-        root.getChildren().addAll(hpl,browser);
+        root.getChildren().addAll(l,browser);
         scene.setRoot(root);
         stage.setScene(scene);
         stage.show();
