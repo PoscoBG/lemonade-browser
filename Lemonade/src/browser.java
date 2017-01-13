@@ -25,7 +25,7 @@ public class browser extends Application {
         webEngine.setJavaScriptEnabled(true);
         TextField l = new TextField ();
         TextField textField = l;
-		hpl.setOnAction(new EventHandler<ActionEvent>() {
+		l.setOnAction(new EventHandler<ActionEvent>() {
           @Override public void handle(ActionEvent e) {
               webEngine.load("http://" + textField.getText());
           }
